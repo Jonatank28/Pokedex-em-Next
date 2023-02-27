@@ -9,11 +9,11 @@ export const global = globalCss({
         listStyle: 'none',
     },
     'body': {
-        backgroundColor: '#0F172A',
-        color: '#f8fafc'
+        backgroundColor: '$bg_primary',
+        color: '$text_color'
     },
     'h1, h2, h3, h4, h5, h6, a': {
-        color: '#f8fafc'
+        color: '$text_color'
     },
 
 }); 

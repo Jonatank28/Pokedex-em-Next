@@ -9,8 +9,10 @@ export const {
 } = createStitches({
     theme: {
         colors: {
-            gray400: 'gainsboro',
-            gray500: 'lightgray',
+            bg_primary: '#fafafa',
+            bg_secundary: '#1a1b1c',
+            text_color: '#171717',
+            text_white: '#fff',
         },
     },
 });
