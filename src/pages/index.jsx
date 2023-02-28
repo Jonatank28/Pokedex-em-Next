@@ -3,8 +3,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import { Container, Titulo, Cards } from '../styles/pages'
 
-export default function Home({ data }) {
-    console.log(data)
+export default function Home({ pokemon }) {
     return (
         <Container>
             <Titulo>
@@ -20,8 +19,8 @@ export default function Home({ data }) {
                 />
             </Titulo>
             <Cards>
-                {data.map((data) => (
-                    <Card key={data.id} data={data} />
+                {pokemon.map((pokemon) => (
+                    <Card key={pokemon.id} pokemon={pokemon} />
                 ))}
             </Cards>
         </Container>
@@ -38,7 +37,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            data: data.results,
+            pokemon: data.results,
         },
     }
 }

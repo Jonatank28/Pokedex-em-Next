@@ -7,6 +7,7 @@ export const Container = styled('footer', {
     justifyContent: 'center',
     alignItems: 'center',
     gap: '.4rem',
+    marginTop: '2rem',
 
     'p': {
         color: '$text_white',

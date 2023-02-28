@@ -1,7 +1,7 @@
 import { styled } from "@/styles/global/stitches.config";
 
 export const Container = styled('div', {
-    minHeight: 'calc(100vh - 120px)',
+    minHeight: 'calc(100vh - 152px)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
