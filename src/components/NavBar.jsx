@@ -5,15 +5,17 @@ import Image from 'next/image'
 const NavBar = () => {
     return (
         <Container>
-            <Logo>
-                <Image
-                    src="/images/pokeball.png"
-                    width={30}
-                    height={30}
-                    alt="Imagem da pokebola"
-                />
-                <h1>PokeNext</h1>
-            </Logo>
+            <Link href="/">
+                <Logo>
+                    <Image
+                        src="/images/pokeball.png"
+                        width={30}
+                        height={30}
+                        alt="Imagem da pokebola"
+                    />
+                    <h1>PokeNext</h1>
+                </Logo>
+            </Link>
             <Links>
                 <ul>
                     <li>
