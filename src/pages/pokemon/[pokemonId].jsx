@@ -5,7 +5,7 @@ import styles from '../../styles/pages/pokemon.module.css'
 
 const Pokemon = ({ pokemon }) => {
     let types = pokemon.types
-    console.log(pokemon)
+    console.log(pokemon.types[0].type.name)
 
     return (
         <Container>
@@ -15,6 +15,7 @@ const Pokemon = ({ pokemon }) => {
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
                     width={300}
                     height={300}
+                    alt="pokemon"
                 />
                 <h3>Número:</h3>
                 <p>#{pokemon.id}</p>
@@ -23,7 +24,7 @@ const Pokemon = ({ pokemon }) => {
                     {types.map((item, index) => (
                         <button
                             className={`${styles['type_' + item.type.name]}`}
-                            key={item.type.index}
+                            key={index}
                         >
                             {item.type.name}
                         </button>
@@ -53,9 +54,10 @@ export const getStaticPaths = async () => {
 
     const paths = data.results.map((pokemon, index) => {
         return {
-            params: { pokemonId: index.toString() },
+            params: { pokemonId: (index + 1).toString() },
         }
     })
+    console.log(paths)
 
     return {
         paths,
@@ -64,7 +66,10 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (context) => {
-    const id = context.params.pokemonId
+    let id = context.params.pokemonId
+    if (id === 0) {
+        id = 1
+    }
     const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
     const data = await res.data
 
