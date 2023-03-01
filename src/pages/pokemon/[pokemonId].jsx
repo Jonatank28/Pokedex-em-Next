@@ -1,7 +1,7 @@
 import { Container, Content, Tipos, AlturaPeso } from '@/styles/pages/pokemon'
 import axios from 'axios'
 import Image from 'next/image'
-import styles from '../../styles/pages/pokemon.module.css'
+import styles from '../../styles/pages/Pokemon.module.css'
 
 const Pokemon = ({ pokemon }) => {
     let types = pokemon.types
