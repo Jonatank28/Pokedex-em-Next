@@ -1,6 +1,7 @@
-import { Container } from '@/styles/pages/pokemon'
+import { Container, Content, Tipos, AlturaPeso } from '@/styles/pages/pokemon'
 import axios from 'axios'
 import Image from 'next/image'
+import styles from '../../styles/pages/pokemon.module.css'
 
 const Pokemon = ({ pokemon }) => {
     let types = pokemon.types
@@ -9,14 +10,37 @@ const Pokemon = ({ pokemon }) => {
     return (
         <Container>
             <h1>{pokemon.name}</h1>
-            <Image
-                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-                width={250}
-                height={250}
-            />
-            {types.map((type) => (
-                <p key={type.type.name}>{type.type.name}</p>
-            ))}
+            <Content>
+                <Image
+                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
+                    width={300}
+                    height={300}
+                />
+                <h3>Número:</h3>
+                <p>#{pokemon.id}</p>
+                <h3>Tipo:</h3>
+                <Tipos>
+                    {types.map((item, index) => (
+                        <button
+                            className={`${styles['type_' + item.type.name]}`}
+                            key={item.type.index}
+                        >
+                            {item.type.name}
+                        </button>
+                    ))}
+                </Tipos>
+                <AlturaPeso>
+                    <div>
+                        <h3>Altura:</h3>
+                        <p>{pokemon.height / 10}m</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <h3>Peso:</h3>
+                        <p>{pokemon.weight / 10}kg</p>
+                    </div>
+                </AlturaPeso>
+            </Content>
         </Container>
     )
 }
