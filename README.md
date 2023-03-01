@@ -1,6 +1,6 @@
 # Desafio: PokeNext
 
-![preview](./imagesdemo.png)
+![preview](public/images/demo.png)
 
 Projeto desenvolvido no curso gratuito do canal <a style="cursor: pointer" href="https://www.youtube.com/watch?v=XHrbg2iYNCg&list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft&ab_channel=MatheusBattisti-HoradeCodar">Matheus Battisti - Hora de Codar</a>
 
