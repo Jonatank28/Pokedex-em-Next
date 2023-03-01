@@ -1,38 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio: PokeNext
 
-## Getting Started
+![preview](./imagesdemo.png)
 
-First, run the development server:
+Projeto desenvolvido no curso gratuito do canal <a style="cursor: pointer" href="https://www.youtube.com/watch?v=XHrbg2iYNCg&list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft&ab_channel=MatheusBattisti-HoradeCodar">Matheus Battisti - Hora de Codar</a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Link do desafio: https://pokedex-em-next.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Link do repositorio: https://github.com/Jonatank28/Pokedex-em-Next
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## ⚙️ Tecnologias utilizadas
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+-   Next
+-   React
+-   Axios
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🧾 Contato
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Email: jonatankalmeidakk28@gmail.com <br />
+WhatsApp: (49) 9 8435-6670
 
-## Learn More
+## 🤓 Considerações
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Foi minha primeira experiência prática no <strong>Next</strong>, fiquei fascinado com a praticidade de criar páginas. Como já tinha um conhecimento prévio em <strong>React</strong>, foi bem simples a adaptação.<br/>
+Outra coisa que me deixou impressionado foi a questão de páginas e rotas dinâmicas. Aprendi muito sobre isso.<br/>
+O curso também incluiu uma seção sobre APIs, onde foi consumida a API <a style="cursor: pointer" href="https://pokeapi.co/">Pokeapi</a>. O instrutor apresentou vários exemplos de como usar a API para buscar dados em um banco de dados ou API externa. Foi interessante ver como a API pode ser usada para criar aplicativos web mais interativos e dinâmicos.
